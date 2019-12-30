@@ -296,9 +296,9 @@ usage(const char *name)
 	fprintf(stderr,
 "Vanitygen %s (" OPENSSL_VERSION_TEXT ")\n"
 "Usage: %s [-vqnrik1NT] [-t <threads>] [-f <filename>|-] [<pattern>...]\n"
-"Generates a Beyondcoin receiving address matching <pattern>, and outputs the\n"
+"Generates a Quebecoin receiving address matching <pattern>, and outputs the\n"
 "address and associated private key.  The private key may be stored in a safe\n"
-"location or imported into a beyondcoin client to spend any balance received on\n"
+"location or imported into a quebecoin client to spend any balance received on\n"
 "the address.\n"
 "By default, <pattern> is interpreted as an exact prefix.\n"
 "\n"
@@ -331,9 +331,9 @@ version, name);
 int
 main(int argc, char **argv)
 {
-    int addrtype = 25;              // Beyondcoin
+    int addrtype = 58;              // Quebecoin
     int scriptaddrtype = 5;
-    int privtype = 176;             // Beyondcoin
+    int privtype = 186;             // Quebecoin
 	int pubkeytype;
 	enum vg_format format = VCF_PUBKEY;
 	int regex = 0;
